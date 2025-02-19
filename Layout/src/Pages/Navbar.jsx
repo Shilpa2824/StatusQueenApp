@@ -30,7 +30,7 @@ const Navbar = () => {
   }, []);
   return (
     <div>
-      <nav className='p-9  shadow-md bg-white w-full h-auto md:h-12 flex flex-col md:flex-row items-center justify-between'>
+      <nav className='p-4  shadow-md bg-white w-full h-auto md:h-16 flex items-center justify-between'>
         <div className='flex justify-between items-center w-full  md:w-auto'>
           {/* Logo */}
           <div className='flex items-center'>
@@ -71,7 +71,7 @@ const Navbar = () => {
                     </div>
                 )}
             </div>
-                <div className='relative'>
+                <div className='relative z-50'>
                 <button
                   onClick = {handleWallpaperClick}
                  className='flex items-center space-x-1 hover:text-teal-700'>
@@ -81,8 +81,8 @@ const Navbar = () => {
                 </button>
                 {isWallpaperOpen && (
                   <div className='absolute bg-white p-3 mt-5 rounded w-50 text-sm'> 
-                  <Link to = "#" className='p-2 text-black hover:text-white hover:bg-red-700 flex items-center transition-all duration-300'> <Smartphone size={18} className='mr-2' /> MOBILE </Link>
-                  <Link to = "#" className='p-2 text-black hover:text-white hover:bg-red-700 flex items-center transition-all duration-300'> <Monitor size={18} className='mr-2' /> DESKTOP </Link>
+                  <Link to = "/mobileWallpaper" className='p-2 text-black hover:text-white hover:bg-red-700 flex items-center transition-all duration-300'> <Smartphone size={18} className='mr-2' /> MOBILE </Link>
+                  <Link to = "/desktopWallpaper" className='p-2 text-black hover:text-white hover:bg-red-700 flex items-center transition-all duration-300'> <Monitor size={18} className='mr-2' /> DESKTOP </Link>
                     </div>
                 )}
                 </div>

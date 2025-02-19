@@ -64,7 +64,7 @@ const Home = () => {
       <div className='min-h-screen  bg-center flex items-center justify-center p-6 '
         style={{ backgroundImage: `url(${bg})` }}
       >
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-8 mt-0 '>
+        <div className='grid grid-cols-2 md:grid-cols-2  gap-8 mt-0 z-40 '>
           {boxes.map((item, index) => (
             <Link key={index} to={item.link} className={`${item.color} p-12  md:p-10 rounded-l shadow-lg flex flex-col items-center justify-center transition transform hover:scale-105`}>
               <div className='text-white'> {item.icon}</div>

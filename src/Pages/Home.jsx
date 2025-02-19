@@ -61,19 +61,24 @@ const Home = () => {
   };
   return (
     <>
-      <div className='min-h-screen  bg-center flex items-center justify-center p-6 '
-        style={{ backgroundImage: `url(${bg})` }}
+     <div
+  className="min-h-screen bg-center flex items-center justify-center p-6"
+  style={{ backgroundImage: `url(${bg})` }}
+>
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+    {boxes.map((item, index) => (
+      <Link
+        key={index}
+        to={item.link}
+        className={`${item.color} w-full max-w-xs aspect-square rounded-lg shadow-lg flex flex-col items-center justify-center transition transform hover:scale-105`}
       >
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-8 mt-0 '>
-          {boxes.map((item, index) => (
-            <Link key={index} to={item.link} className={`${item.color} p-12  md:p-10 rounded-l shadow-lg flex flex-col items-center justify-center transition transform hover:scale-105`}>
-              <div className='text-white'> {item.icon}</div>
-              <p className='mt-2 text-white font-semibold text-lg'>{item.name}</p>
-            </Link>
-          ))}
+        <div className="text-white">{item.icon}</div>
+        <p className="mt-2 text-white font-semibold text-lg text-center">{item.name}</p>
+      </Link>
+    ))}
+  </div>
+</div>
 
-        </div>
-      </div>
       <div className='relative'>
         {/* quotes section */}
         <div className="w-full max-w-[76rem] px-4 mx-auto  -mt-8 p-6 shadow-2xl  bg-white-300 bg-white border border-gray-200 rounded-xl">
