@@ -125,13 +125,13 @@ const Navbar = () => {
                   Image Status
                 </Link>
                 <Link to="/english-status" className="block hover:text-red-500" onClick={toggleSidebar}>
-                  Image Status
+                  English Status
                 </Link>
                 <Link to="/hindi-status" className="block hover:text-red-500" onClick={toggleSidebar}>
-                  Image Status
+                  Hindi Status
                 </Link>
                 <Link to="/punjabi-status" className="block hover:text-red-500" onClick={toggleSidebar}>
-                  Image Status
+                  Punjabi Status
                 </Link>
               </div>
             )}
