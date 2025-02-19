@@ -124,6 +124,15 @@ const Navbar = () => {
                 <Link to="/image-status" className="block hover:text-red-500" onClick={toggleSidebar}>
                   Image Status
                 </Link>
+                <Link to="/english-status" className="block hover:text-red-500" onClick={toggleSidebar}>
+                  Image Status
+                </Link>
+                <Link to="/hindi-status" className="block hover:text-red-500" onClick={toggleSidebar}>
+                  Image Status
+                </Link>
+                <Link to="/punjabi-status" className="block hover:text-red-500" onClick={toggleSidebar}>
+                  Image Status
+                </Link>
               </div>
             )}
           </div>
@@ -161,3 +170,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
