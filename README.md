@@ -24,3 +24,10 @@ Libraries/Dependencies/Framework:
 3) React Router Dom a famous library for addding routing in the React Applications .
 4) Npm is used for installing js packages.
   
+Responsiveness:
+
+This application is designed to be fully responsive, providing an optimal user experience across a wide range of devices, including desktops, mobile phones, and tablets. The layout and structure remain consistent and perfectly adapted to each device's screen size.
+
+Deployment :
+
+statusqueentaskapp1.netlify.app  click on this link to view my app.
